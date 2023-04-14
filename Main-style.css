@@ -1,0 +1,7 @@
+body {
+	font-family: sans-serif;
+	margin: 0px;
+}
+body::-webkit-scrollbar { width: 7px; }
+body::-webkit-scrollbar-track { background: #EFEFEF; }
+body::-webkit-scrollbar-thumb { background-color: #808080; }

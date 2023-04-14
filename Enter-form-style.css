@@ -1,0 +1,69 @@
+body {
+  font-family: Sans-Serif; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+	width: 320px;
+   height: content;
+
+   position: relative;
+   padding: 10px;
+  }
+
+.title {
+  margin-bottom: 10px;    /* Заголовок */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+
+.enter-form {
+  width: 100%;      /* Форма */
+  margin-bottom: 5px;
+}
+.enter-form input {
+  width: 100%;      /* Элемент формы */
+  display: block;
+  padding: 8px;
+  margin-bottom: 10px;
+ 
+  font-size: 15px;
+  font-weight: 300;
+  color: darkgrey;
+  border: grey solid 1.3px;
+}
+.enter-form input:hover, .enter-form input:focus {
+  outline: #018326 solid 2px;
+  outline-offset: none;
+  border: #FFF solid 1px;
+  color: #000;
+}
+.login { margin-bottom: 10px; }
+
+
+.buttons { display: block; }    /* Кнопки */
+.forgot-password {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: grey;
+  align-self: start;
+}
+.forgot-password:hover { color: #000; }
+.log-in, .registration {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px;
+  color: #018326;
+  background-color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  border: #018326 solid 1.5px;
+}
+.registration { margin-top: 6px; }
+.log-in:hover, .registration:hover { background-color: #018326;  color: #FFF; }
