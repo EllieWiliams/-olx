@@ -1,0 +1,154 @@
+body { background-color: #FFF; }
+main {
+	padding-top: 5%;
+	margin: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.search-line input { font-family: 'Roboto'; font-weight: 400; margin-top: 0;}
+.column {
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*.left-column { width: 25%; }*/
+.center-column { width: 50%; }
+.right-column { width: 25%; }
+/* Первая колонка */
+.user-photo {
+	position: relative;
+	min-width: 290px;
+	min-height: 290px;
+	background-color: #018326;
+	align-self: center;
+}
+.edit-sign {
+	position: relative;
+	left: 80%;
+	top: 80%;
+}
+.user-name { font-size: 22px; margin: 0; }
+.contacts-container { width: 100%; margin-top: 12px; }
+.buttons { margin-top: 12px; }
+
+/* Вторая колонка */
+.center-column:first-child { width: 100%; }
+
+/* Третья колонка */
+.right-column div { font-size: 24px; color: #018326; align-self: start; margin-top: 12px; }
+.title {
+	position: relative;
+	font-size: 22px;
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	border: none;
+	text-align: center;
+	background-color: #B5C8B1;
+	padding: 8px;
+}
+.add-photo-container {
+	width: 100%;
+	margin-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.img-button {
+
+	margin: 12px 12px 0 0;
+	padding: 0px;
+	border: none;
+	outline: none;
+	background-color: rgba(232, 255, 238, 0);
+}
+.img-button:hover { cursor: pointer; }
+.img-button svg { padding: 0; margin: 0; }
+svg:hover { fill: #ECF8E9; }
+
+button a, button a:visited { color: #018326; }
+button a:active, button a:hover { color: #FFF; }
+form { align-self: start; margin: 0; }
+form p { margin: 6px 0 0; }
+form span, form p {
+	display: flex; width: 100%;
+	margin-top: 6px;
+	color: #808080;
+	font-family: 'Roboto Condensed';
+}
+form input {
+	display: inline-block;
+	width: 12px;
+	margin: 0 12px 0 0;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+form label { display: inline-block; width: 100%; }
+
+input, select, textarea, .save {font-family: 'Roboto Condensed';
+	padding: 6px;
+	font-size: 16px;
+	width: 100%;
+	margin-top: 3px;
+	background-color: #FFF;
+	border: #A4A4A4 solid 1px;
+}
+input:focus, input:hover, textarea:hover, textarea:focus, select:focus { background-color: #ECF8E9; transition-duration: 0.3s; }
+input:not(:hover) { transition-duration: 0.3s; }
+/*textarea:hover, textarea:focus, select:focus {
+	outline: #018326 solid 1px;
+	border: #FFF solid 1px;
+}*/
+
+textarea { height: 300px; resize: none; font-family: 'Roboto Condensed'; padding: 12px 16px; }
+textarea::-webkit-scrollbar { width: 6px; }
+textarea::-webkit-scrollbar-track { background: rgba(232, 255, 238, 0) }
+textarea::-webkit-scrollbar-thumb { background-color: #018326; }
+
+
+
+
+/* ======================== Выпадающий список Категории товаров ======================== */
+/*select { appearance: none; }*/
+option { padding-top: 12px; }
+.label {
+	font-size: 18px;
+	color: #000;
+
+}
+
+
+
+
+
+@media screen and ( max-width: 1232px ) {
+	main { flex-direction: column; align-items: center; padding: 58px 16px; }
+.left-column, .center-column, .right-column { width: 100%; max-width: 800px; }
+.center-column { align-items: center; }
+.left-column {
+	display: flex;
+	flex-direction: row;
+	padding: 0 20px 24px;
+	align-items: start;
+}
+.contacts-container { padding: 0 36px; margin-top: 0; }
+
+
+.right-column {
+	width: 100%;
+	max-width: 800px;
+	padding-top: 24px;
+}
+.disabled { display: block; }
+}
+ @media screen and ( max-width: 600px ) {
+
+ 	.column {
+ 		flex-direction: column;
+ 		align-items: center;
+ 		padding: 0 0 24px;
+ 	}
+ 	.contacts-container { padding: 0; }
+ 	.contact { width: 100%; }
+ }
